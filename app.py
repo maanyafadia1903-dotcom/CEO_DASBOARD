@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 from models import predict_next_6_months, detect_anomalies
 
-app = Flask(__name__)
+CORS(app)
 DB_PATH = "dashboard.db"
 CORS(app, origins=["http://127.0.0.1:5500", "http://localhost:5500"])
 
