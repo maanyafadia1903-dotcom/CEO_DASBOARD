@@ -3,9 +3,9 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 from models import predict_next_6_months, detect_anomalies
 
-CORS(app)
+app = Flask(__name__)
 DB_PATH = "dashboard.db"
-CORS(app, origins=["http://127.0.0.1:5500", "http://localhost:5500"])
+CORS(app)
 
 def db_helper(sql, params=()):
     conn = sqlite3.connect(DB_PATH)
