@@ -2,6 +2,9 @@
 
 A full-stack business intelligence dashboard for monitoring company metrics, forecasting revenue, and detecting anomalies across multiple companies.
 
+## 🚀 Live Demo
+**View and interact with the live dashboard here:** [https://ceo-dashboard-ui.onrender.com](https://ceo-dashboard-ui.onrender.com)
+
 ## Tech Stack
 
 - **Backend** — Python, Flask, SQLite
