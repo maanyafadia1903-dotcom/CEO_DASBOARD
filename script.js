@@ -1,4 +1,4 @@
-const BASE = "http://127.0.0.1:5000";
+const BASE = "https://ceo-dashboard-api-qq7p.onrender.com";
 let activeSection = "overview";
 let revenueChart = null, deptChart = null, forecastChart = null, reportChart = null;
 
