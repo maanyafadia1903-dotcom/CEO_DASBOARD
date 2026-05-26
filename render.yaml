@@ -9,8 +9,9 @@ services:
     startCommand: gunicorn app:app
     
   # 2. Vanilla JS Frontend
-  - type: static_site
+  - type: web
     name: ceo-dashboard-ui
+    env: static
     buildCommand: ""
     # Serves the static HTML/CSS/JS files from the root directory
     staticPublishPath: ./
