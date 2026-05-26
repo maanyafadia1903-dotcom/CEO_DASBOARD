@@ -1,0 +1,16 @@
+services:
+  # 1. Flask Backend API
+  - type: web
+    name: ceo-dashboard-api
+    env: python
+    # Installs dependencies and seeds your SQLite database
+    buildCommand: pip install -r requirements.txt && python data_generator.py
+    # Gunicorn is required for production Flask apps
+    startCommand: gunicorn app:app
+    
+  # 2. Vanilla JS Frontend
+  - type: static_site
+    name: ceo-dashboard-ui
+    buildCommand: ""
+    # Serves the static HTML/CSS/JS files from the root directory
+    staticPublishPath: ./
